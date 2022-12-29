@@ -28,3 +28,7 @@ class AgendaDB:
         def fechar(self):
             self.cursor.close()
             self.conn.close()
+
+if __name__ == '__main__':
+    agenda = AgendaDB('agenda.db')
+    agenda.inserir('Luiz','111111')
